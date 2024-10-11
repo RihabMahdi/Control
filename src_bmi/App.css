@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+
+body {
+  font-family: 'Playfair Display', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+.App {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  width: 300px;
+  text-align: center;
+}
+
+h1 {
+  font-size: 24px;
+  color: #333333;
+  margin-bottom: 20px;
+}
+
+label { 
+  font-family: 'Playfair Display', sans-serif;
+
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+  color: #555555;
+}
+
+input {
+  font-family: 'Playfair Display', sans-serif;
+  width: 100%;
+  padding: 8px;
+  margin: 8px 0;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+button {
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  font-family: 'Playfair Display', sans-serif;
+  border-radius: 5px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 10px;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+h2 {
+  font-size: 20px;
+  color: #333333;
+  margin-top: 20px;
+}
+
+h3 {
+  font-size: 18px;
+  color: #333333;
+  margin-top: 10px;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+
+.category-sous-poids {
+  color: #FF5722; /* Orange for underweight */
+}
+
+.category-normal {
+  color: #4CAF50; /* Green for normal */
+}
+
+.category-surpoids {
+  color: #FF5252; /* Red for overweight */
+}
