@@ -1,47 +1,20 @@
 import React from 'react';
-import { Route, Routes, Link } from 'react-router-dom';
-import Employe from './pages/Employe';
-import InputPage from './pages/InputPage'; // Hypothetical component for the old inputSlice functionality
-import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Home from './pages/Home';
+import CartPage from './pages/CartPage';
+import Header from './components/Header';
+import './App.css'
 const App = () => {
   return (
-    <div>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <div className="container">
-          <Link className="navbar-brand" to="/">MyApp</Link>
-          <button
-            className="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span className="navbar-toggler-icon"></span>
-          </button>
-          <div className="collapse navbar-collapse" id="navbarNav">
-            <ul className="navbar-nav">
-              <li className="nav-item">
-                <Link className="nav-link" to="/employees">Employees</Link>
-              </li>
-              <li className="nav-item">
-                <Link className="nav-link" to="/input-page">Input Page</Link> {/* Old inputSlice feature */}
-              </li>
-            </ul>
-          </div>
-        </div>
-      </nav>
-
-      <div className="container mt-4">
+    <Router>
+      <Header />
+      <main>
         <Routes>
-          <Route path="/" element={<h1>Welcome to MyApp</h1>} />
-          <Route path="/employees" element={<Employe />} />
-          <Route path="/input-page" element={<InputPage />} />
+          <Route path="/" element={<Home />} />
+          <Route path="/cart" element={<CartPage />} />
         </Routes>
-      </div>
-    </div>
+      </main>
+    </Router>
   );
 };
 

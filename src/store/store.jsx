@@ -1,10 +1,10 @@
 import { configureStore } from '@reduxjs/toolkit';
-import bmiReducer from '../features/bmiSlice';
+import cartReducer from '../features/cartSlice';
+import mealsReducer from '../features/mealsSlice';
 
- const store = configureStore({
-  reducer: {
-    bmi: bmiReducer,
-  },
+export const store = configureStore({
+    reducer: {
+        cart: cartReducer,
+        meals: mealsReducer
+    }
 });
-
-export default store;

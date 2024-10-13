@@ -1,143 +1,170 @@
-@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap');
+/* ------------------ Meal Card Styles ------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 
-body {
-  font-family: 'Playfair Display', sans-serif;
-  background-color: #f4f4f4;
-  display: flex;
-  flex-direction: column; 
-  justify-content: flex-start; 
-  align-items: center; 
-  height: 100vh; 
-  margin: 0; 
+.logo {
+  font-family: 'Pacifico', cursive;
 }
 
-.App {
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 2px 30px 10px rgba(0, 0, 0, 0.1);
-  padding: 20px 0px 20px 0px; 
-  width: 700px; 
-  text-align: center; 
+.navbar-nav {
+  margin-left: auto;
+  /* Ensure the nav items are on the right */
 }
 
-h1 {
-  font-size: 24px;
-  color: #333333;
+.header {
+  height: 70px;
+}
+
+/* Majestic font for MealCard titles */
+.meal-card-title {
+  font-family: 'Playfair Display', serif;
+  /* You can choose another font */
+  font-size: 1.7rem;
+  font-weight: bolder;
+  color: #82a138;
+
+}
+
+/* Grey description for MealCard with smaller font size */
+.meal-card-description {
+  color: #6c757d;
+  /* Bootstrap's default grey */
+  font-size: 0.9rem;
+  margin-block: 10px;
+  /* Smaller size for description */
+}
+
+/* Align buttons in MealCard */
+.meal-card-button-container {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  gap: 20px;
+}
+
+/* Stylish button for MealCard */
+.meal-card-btn-custom {
+  background-color: #2c353b;
+  border: none;
+  border-radius: 20px;
+  transition: background-color 0.3s ease;
+  width: 150px;
+  margin-inline: 20px;
   margin-bottom: 20px;
 }
 
-label { 
-  font-family: 'Playfair Display', sans-serif;
-  display: block;
-  margin-bottom: 10px;
-  font-weight: bold;
-  color: #555555;
+.meal-card-btn-custom:hover {
+  background-color: #4b5a64;
+  /* Darker purple on hover */
 }
 
-input {
-  font-family: 'Playfair Display', sans-serif;
-  width: 75%;
-  padding: 8px;
-  margin: 8px 0;
-  box-sizing: border-box;
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  font-size: 16px;
+.meal-card-btn-custom:focus {
+  box-shadow: none;
+  /* Remove the focus ring */
 }
 
-button {
-  background-color: #4CAF50;
-  color: white;
+/* MealCard styling */
+.meal-card {
   border: none;
-  font-family: 'Playfair Display', sans-serif;
-  border-radius: 5px;
-  padding: 10px 20px;
-  font-size: 16px;
-  cursor: pointer;
-  margin-top: 10px;
+  /* Remove default card border */
+  border-radius: 10px;
+  /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Soft shadow */
+  transition: transform 0.2s;
 }
 
-button:hover {
-  background-color: #45a049;
+.meal-card:hover {
+  transform: scale(1.05);
+  /* Slightly scale up on hover */
 }
 
-h2 {
-  font-size: 20px;
-  color: #333333;
-  margin-top: 20px;
-}
+/* ------------------ Cart Item Styles ------------------ */
 
-h3 {
-  font-size: 18px;
-  color: #333333;
-  margin-top: 10px;
-}
-
-input[type="number"]::-webkit-outer-spin-button,
-input[type="number"]::-webkit-inner-spin-button {
-  -webkit-appearance: none;
-  margin: 0;
-}
-
-input[type="number"] {
-  -moz-appearance: textfield;
-}
-
-.category-sous-poids {
-  color: #FF5722; /* Orange for underweight */
-}
-
-.category-normal {
-  color: #4CAF50; /* Green for normal */
-}
-
-.category-surpoids {
-  color: #FF5252; /* Red for overweight */
-}
-
-.navbar {
-  background-color: #ffffff; /* White background for navbar */
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow */
-  width: 100%; 
-}
-
-.navbar-brand {
-  font-family: 'Playfair Display', sans-serif;
+/* Majestic font for CartItem titles */
+.cart-item-title {
+  font-family: 'Playfair Display', serif;
+  /* You can choose another font */
+  font-size: 1.5rem;
   font-weight: bold;
-  color: #333333; 
 }
 
-.nav-link {
-  font-family: 'Playfair Display', sans-serif; /* Custom font */
-  color: #555555; /* Gray color for links */
-  transition: color 0.3s; /* Smooth transition for hover */
+/* Grey description for CartItem */
+.cart-item-description {
+  color: #6c757d;
+  /* Bootstrap's default grey */
+  font-size: 1rem;
 }
 
-.nav-link:hover {
-  color: #4CAF50; /* Change to green on hover */
-  text-decoration: underline; /* Underline effect on hover */
+/* Center-align buttons and quantity in CartItem */
+.cart-item-actions {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
-.nav-item.active .nav-link {
-  font-weight: bold; /* Bold for active link */
-  color: #4CAF50; /* Green color for active link */
+/* Stylish button for CartItem */
+.cart-item-btn-custom {
+  background-color: #2c353b;
+  border: none;
+  border-radius: 20px;
+  padding: 0.5rem 1.5rem;
+  transition: background-color 0.3s ease;
 }
 
-.navbar-toggler {
-  border-color: #4CAF50; /* Green border for toggler */
+.cart-item-btn-custom:hover {
+  background-color: #5a32a3;
+  /* Darker purple on hover */
 }
 
-.navbar-toggler-icon {
-  background-color: #4CAF50; /* Green icon for toggler */
+.cart-item-btn-custom:focus {
+  box-shadow: none;
+  /* Remove the focus ring */
 }
 
-/* Adjust for smaller screens */
-@media (max-width: 768px) {
-  .navbar {
-    padding: 10px; /* Adjust navbar padding for mobile */
+/* CartItem styling */
+.cart-item {
+  background-color: #000000;
+  /* White background for cart items */
+  border: none;
+  /* No border */
+  border-radius: 10px;
+  /* Rounded corners */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  /* Shadow for cart items */
+}
+
+
+
+
+
+/* Meal items section */
+.items-section {
+  padding: 50px 0;
+
+}
+
+
+.container {
+  margin-top: 20px;
+  /* Small margin to separate from hero section */
+}
+
+/* Styling for the scroll down indicator */
+.scroll-indicator {
+  font-size: 1.5rem;
+  margin-top: 20px;
+  animation: bounce 2s infinite;
+  /* Simple bounce animation */
+}
+
+/* Keyframes for bounce animation */
+@keyframes bounce {
+
+  0%,
+  100% {
+    transform: translateY(0);
   }
 
-  .navbar-brand, .nav-link {
-    font-size: 18px; /* Increase font size for readability */
+  50% {
+    transform: translateY(-10px);
   }
 }

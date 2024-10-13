@@ -1,0 +1,67 @@
+{
+    "meals": [
+        {
+            "id": 1,
+            "name": "Spaghetti Bolognese",
+            "description": "Classic Italian pasta dish with rich meat sauce.",
+            "price": 12.99,
+            "image": "https://img.freepik.com/premium-photo/pasta-spaghetti-bolognese-white-plate-white-background-bolognese-sauce-is-classic-italian_763111-5992.jpg"
+        },
+        {
+            "id": 2,
+            "name": "Caesar Salad",
+            "description": "Fresh romaine lettuce with Caesar dressing and croutons.",
+            "price": 8.99,
+            "image": "https://w-dog.ru/wallpapers/1/12/522459288849444/xleb-tablichka-myaso-zelen-salat.jpg"
+        },
+        {
+            "id": 3,
+            "name": "Margherita Pizza",
+            "description": "Traditional Italian pizza topped with fresh tomatoes, mozzarella, and basil.",
+            "price": 15.99,
+            "image": "https://th.bing.com/th/id/R.21a9d053b643b7818314406d5eaefcbb?rik=X9QzamhTT476lA&pid=ImgRaw&r=0"
+        },
+        {
+            "id": 4,
+            "name": "Grilled Chicken",
+            "description": "Juicy grilled chicken breast with lettuce, tomato, and mayonnaise on a toasted bun.",
+            "price": 9.49,
+            "image": "https://static.vecteezy.com/system/resources/thumbnails/035/063/394/small_2x/ai-generated-grilled-chicken-thighs-free-png.png"
+        },
+        {
+            "id": 5,
+            "name": "Vegetarian Burrito",
+            "description": "Stuffed with rice, beans, veggies, and topped with guacamole and salsa.",
+            "price": 10.49,
+            "image": "https://th.bing.com/th/id/OIP.Fj1JzIXXc5fHy02phoomBQHaE7?w=273&h=182&c=7&r=0&o=5&pid=1.7"
+        },
+        {
+            "id": 6,
+            "name": "Beef Tacos",
+            "description": "Three soft tacos filled with seasoned beef, lettuce, cheese, and salsa.",
+            "price": 11.99,
+            "image": "https://th.bing.com/th/id/OIP.mUVs10n81wZUabqVj4TbxwHaE8?rs=1&pid=ImgDetMain"
+        },
+        {
+            "id": 7,
+            "name": "Salmon Sushi Roll",
+            "description": "Fresh salmon sushi rolls with cucumber, avocado, and a side of soy sauce.",
+            "price": 14.99,
+            "image": "https://th.bing.com/th/id/OIP.AWdVfQSix8h_b_QzE0-D_AHaE8?w=255&h=180&c=7&r=0&o=5&pid=1.7"
+        },
+        {
+            "id": 8,
+            "name": "Alfredo Pasta",
+            "description": "Creamy Alfredo sauce tossed with fettuccine and grilled chicken.",
+            "price": 13.99,
+            "image": "https://th.bing.com/th/id/OIP._1-9o5IhRdrcGRcSd9S0GgHaHa?w=742&h=742&rs=1&pid=ImgDetMain"
+        },
+        {
+            "id": 9,
+            "name": "BBQ Ribs",
+            "description": "Tender and juicy ribs slow-cooked in a tangy BBQ sauce, served with coleslaw.",
+            "price": 19.99,
+            "image": "https://th.bing.com/th/id/OIP.UHH7QWtLEUeEd7i5LD8UZgHaHa?w=1000&h=1000&rs=1&pid=ImgDetMain"
+        }
+    ]
+}
